@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/cta",
   "title": "Cta",
   "description": "CTA MCP — Chicago Transit Authority real-time trains ('L') + buses",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/cta",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-cta",
