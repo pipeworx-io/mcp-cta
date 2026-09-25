@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-cta",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "CTA MCP — Chicago Transit Authority real-time trains ('L') + buses",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-d9ff2af182b69c3be8816973d82ecc90770214a19b5cc9489b3414e2cbc448e7",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-ca21e514ad48694ca09b871e5b4e759207350550b6a06306bbd0a2479892b50f",
+    "sourceCommit": "5b29c2b0c11e1fcd954969a245b474e6e9475116"
   }
 }
