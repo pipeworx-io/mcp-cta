@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-cta",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "CTA MCP — Chicago Transit Authority real-time trains ('L') + buses",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-cta": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "cta"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-cta.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/cta",
   "pipeworx": {
-    "sourceHash": "v1-7897967e829d7d7a0fe2143b3821d7401ce8b89dcd28df19da11cdf48e2c4cbf",
-    "sourceCommit": "f1ef7a2f6b9cb1b8da1374ec2fcb28c661582b35"
+    "mode": "gateway",
+    "slug": "cta",
+    "gatewaySlug": "cta",
+    "sourceHash": "v1-7aa371ab4cfbc070d1478c01b3a6b50deffced67b2d1fb5cba3468a2fdf77249",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
